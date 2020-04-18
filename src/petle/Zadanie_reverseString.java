@@ -20,6 +20,5 @@ public class Zadanie_reverseString {
     }
     System.out.println();
     System.out.println("Napis: " + napis + " od tyłu to: " + wynik);
-
   }
 }
