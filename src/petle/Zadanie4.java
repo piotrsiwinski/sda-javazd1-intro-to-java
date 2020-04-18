@@ -30,5 +30,26 @@ public class Zadanie4 {
 
     System.out.println("Dlugosc napisu bez spacji to: ");
 
+    // 1. Sposob
+    int counter = 0;
+    for (int i = 0; i < napis.length(); i++) {
+      char znak = napis.charAt(i);
+      if (znak == ' ') {
+        continue;
+      }
+      counter++;
+    }
+
+    // 2. sposob
+    int licz = 0;
+    for (int i = 0; i < napis.length(); i++) {
+      char znak = napis.charAt(i);
+      if (znak != ' ') {
+        licz++;
+      }
+    }
+
+    System.out.println("Napis bez spacji: " + counter);
+    System.out.println("Napis bez spacji: " + licz);
   }
 }
