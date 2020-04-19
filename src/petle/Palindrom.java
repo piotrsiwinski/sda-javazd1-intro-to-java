@@ -41,12 +41,13 @@ public class Palindrom {
     // i = 2    j = 5 -1 -2 -> 2
 
     // 2. opcja, bez zmiennej j
+    /*
     for (int i = 0; i < napis.length() / 2; i++) {
       if (napis.charAt(i) != napis.charAt(napis.length() - 1 - i)) {
         czyPalindrom = false;
         break;
       }
-    }
+    }*/
 
     if (czyPalindrom) {
       System.out.println("Napis: " + napis + " jest palindromem");
