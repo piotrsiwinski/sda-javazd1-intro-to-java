@@ -38,6 +38,14 @@ public class ZmienWielkoscLiter {
     //
 
 
+    /**
+     Program zamienia znaki male na duze, duze na male...
+     W pierwszych dwoch case'ach uzywamy konkatenacji stringa w petli
+     Jednak nie jest to optymalne rozwiazanie
+
+     W case 3 korzystamy z StringBuilder'a -> POLECANE ROZWIAZANIE
+     */
+
     System.out.println(text1);
     Scanner czytnik = new Scanner(System.in);
     System.out.println("Podaj napis:");
