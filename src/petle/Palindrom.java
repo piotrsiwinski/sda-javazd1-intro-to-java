@@ -22,17 +22,21 @@ public class Palindrom {
     // kajak
     // i   j
     // for (inicjalizacja zmiennych; warunek_zatrzymania; krok - co robic po skonczeniu petli)
-
-
     Scanner czytnik = new Scanner(System.in);
     System.out.println("Podaj napis, a ja sprawdze czy palindrom");
-    String napis = czytnik.nextLine();
+    String text = czytnik.nextLine();
+    String napis = text.toLowerCase();
     boolean czyPalindrom = true;
     for (int i = 0, j = napis.length() - 1; i < napis.length() / 2; i++, j--) {
       if (napis.charAt(i) != napis.charAt(j)) {
         czyPalindrom = false;
         break;
       }
+    }
+    if (czyPalindrom) {
+      System.out.println("Napis: " + text + " jest palindromem");
+    } else {
+      System.out.println("Napis: " + text + " NIE jest palindromem");
     }
     // 0 1 2 3 4
     // k a j a k
@@ -48,12 +52,6 @@ public class Palindrom {
         break;
       }
     }*/
-
-    if (czyPalindrom) {
-      System.out.println("Napis: " + napis + " jest palindromem");
-    } else {
-      System.out.println("Napis: " + napis + " NIE jest palindromem");
-    }
 
   }
 }
